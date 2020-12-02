@@ -1,0 +1,6 @@
+import testlib
+
+begin
+  int x = call f() ;
+  println x
+end

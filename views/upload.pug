@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.topnav
+    a(href="http://localhost:3000/") Home
+    a.active(href="http://localhost:3000/upload") Upload
+    a(href="http://localhost:3000/download") Download
+
+  div(style="padding-left:16px")
+    h1= title
+    p Please upload a
+      strong  WACC
+      |  file to the server.
+    form(method="post" enctype="multipart/form-data" action="/upload")
+      input(type="file" name="file")
+      input(type="submit" value="Upload")

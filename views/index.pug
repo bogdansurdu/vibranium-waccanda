@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div.topnav
+    a.active(href="http://localhost:3000/") Home
+    a(href="http://localhost:3000/upload") Upload
+    a(href="http://localhost:3000/download") Download
+
+  div(style="padding-left:16px")
+    h1= title
+    p Welcome to
+      strong  #{title}
+      | , the website supporting the
+      strong  WACC
+      |  package manager
+      strong  Vibranium
+      |  made by
+      strong  Group 9.
+
+    p If you would like to contribute with a package, please #[a(href='http://localhost:3000/upload') upload] a
+      strong  WACC
+      |  file.

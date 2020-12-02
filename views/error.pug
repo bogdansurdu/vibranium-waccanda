@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div.topnav
+    a(href="http://localhost:3000/") Home
+    a(href="http://localhost:3000/upload") Upload
+    a(href="http://localhost:3000/download") Download
+
+  h1= message
+  p Please return to the #[a(href='http://localhost:3000/upload') upload page].
